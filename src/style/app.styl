@@ -12,6 +12,7 @@
     left 51px
     width 170px
     height 40px
+    z-index 9999
 
   .line
     width 0
@@ -20,6 +21,7 @@
     position absolute
     top 60px
     left 250px
+    z-index 9999
 
   #topic
     background url('../assets/images/To-Do-List Alarm System.png') no-repeat center/cover
@@ -29,47 +31,47 @@
     width 216px
     height 20px
     opacity 1
+    z-index 9999
 
 #app
   #home
     #bg-left
-      background url('../assets/images/Subtraction 4.png') no-repeat center/cover
+      background url('../assets/images/Subtraction 4.png') no-repeat left/contain
       position absolute
-      top 182px
-      left 0.000244140625px
-      width 358px
-      height 716px
+      top 18vh
+      width 19vw
+      height 66vh
       
 
     #bg-top
       background url('../assets/images/Intersection 2.png') no-repeat center/cover
       position absolute
-      top 0.04608154296875px
-      left: 511px
-      width 305px
-      height 130px
+      // top 18vh
+      left: 38vh
+      width 16vw
+      height 12vh
 
     #bg-right
-      background url('../assets/images/Subtraction 5.png') no-repeat center/cover
+      background url('../assets/images/Subtraction 5.png') no-repeat right/contain
       position absolute
-      top 182px
-      right 0.000244140625px
-      width 358px
-      height 716px
+      top 18vh
+      right 0
+      width 19vw
+      height 66vh
 
     #bg-bottom
-      background url('../assets/images/Intersection 1.png')no-repeat center/cover
+      background url('../assets/images/Intersection 1.png')no-repeat bottom/contain
       position absolute
-      top 700px
-      right 400px
-      width 464px
-      height 198px
+      bottom 0
+      left 63vw
+      width 24vw  
+      height 18vh
 
     #menu
       background url('../assets/images/Group 2.png') no-repeat center/cover
       position absolute
-      top 50px
-      right 200px
+      top 8vh
+      right 10vw
       width 49px
       height 30px
 
@@ -80,55 +82,57 @@
         border-bottom 1px solid #F2F0C9
         padding-bottom 10px
         color #F2F0C9
-        width: 300px
+        width: 16vw
         height 28px
         position absolute
-        top 512px
-        left 98px
+        top 54vh
+        left 5vw
       
       .btn
         background-color transparent
         border none
         position absolute
-        top 500px
-        left 400px
+        top 52vh
+        left 20vw
         font-size 24px
         width 30px
         height 30px
+        color #F2F0C9
       
     #btn-group
       #listbtn
         background url('../assets/images/Group 18.png') no-repeat center/cover
         position absolute
-        top 400px
-        right 180px
+        top 30vh
+        right 10vw
         width 70px
         height 70px
       
       #chartbtn
         background url('../assets/images/Group 19.png') no-repeat center/cover
         position absolute
-        top 500px
-        right 180px
+        top 50vh
+        right 10vw
         width 70px
         height 70px
 
       #settingsbtn
         background url('../assets/images/Group 20.png') no-repeat center/cover
         position absolute
-        top 600px
-        right 180px
+        top 70vh
+        right 10vw
         width 70px
         height 70px
 
 #countingAlarm
   #alarm-container
-    background url('../assets/images/Subtraction 3.png') no-repeat center/cover
+    background url('../assets/images/Subtraction 3.png') no-repeat center/contain
+    width 33vw
+    height 33vw
     position absolute
-    top 218px
-    left 642px
-    width 523px
-    height 534px
+    top 50%
+    left 50%
+    transform: translate(-50%,-50%)
 
     #title
       color #F2F0C9
@@ -140,46 +144,69 @@
     
     .ring-btn
       background url('../assets/images/Group 15.png') no-repeat center/cover
+      position absolute
+      bottom 20%
+      left 28%
+      transform: translateY(20%)
       width 60px
       height 60px
 
+
+
     .mute-btn
       background url('../assets/images/mute.png') no-repeat center/cover
+      position absolute
+      bottom 20%
+      left 28%
+      transform: translateY(20%)
       width 60px
       height 60px
 
     .play-btn
       background url('../assets/images/Group 17.png') no-repeat center/cover
+      position absolute
+      bottom 20%
+      left 50%
+      transform: translateY(20%)
       width 60px
       height 60px
 
     .pause-btn
       background url('../assets/images/pause.png') no-repeat center/cover
+      position absolute
+      bottom 20%
+      left 45%
+      transform: translateY(20%)
       width 60px
       height 60px
 
     .skip-btn
       background url('../assets/images/Group 16.png') no-repeat center/cover
+      position absolute
+      bottom 20%
+      right  20%
+      transform: translateY(20%)
       width 60px
       height 60px
   
   #nextText
     position absolute
-    bottom 80px
-    left 850px
+    bottom 0
+    left 50%
+    transform: translateX(-50%)
     font-size 20px
     color #F2F0C9
     opacity 0.7
     z-index 999
+    background white
 
 #pages
   #bg-1
     background url('../assets/images/Subtraction 4.png') no-repeat center/cover
     position absolute
-    top 182px
-    left 0.000244140625px
-    width 358px
-    height 716px
+      top 18vh
+      width 19vw
+      height 66vh
 
   #icons-function
      #listbtn
@@ -187,78 +214,86 @@
         position absolute
         top 400px
         right 180px
-        width 70px
-        height 70px
+        width 4vw
+        height 4vw
       
       #chartbtn
         background url('../assets/images/Group 19.png') no-repeat center/cover
         position absolute
         top 500px
         right 180px
-        width 70px
-        height 70px
+        width 4vw
+        height 4vw
 
       #settingsbtn
         background url('../assets/images/Group 20.png') no-repeat center/cover
         position absolute
         top 600px
         right 180px
-        width 70px
-        height 70px
+        width 4vw
+        height 4vw
 
   #bg-2
-    background url('../assets/images/Path 9.png') no-repeat center/cover
+    background url('../assets/images/Path 9.png') no-repeat right/contain
     position absolute
-    top 0px
-    right 0px
-    width 780px
+    top 50vh
+    right 0
+    transform translateY(-50%)
+    width 47vw
     height 100vh
 
   #icons-function
     #listbtn
-      top 350px
-      left 870px
+      top 40vh
+      right 35vw
+      position absolute
+      
     #chartbtn
-      top 450px
-      left 870px
+      top 55vh
+      right 35vw
+      position absolute
     #settingsbtn
-      top 550px
-      left 870px
+      top 70vh
+      right 35vw
+      position absolute
 
   #close
     .closeicon
       color #F2F0C9
-      font-size 6rem
+      font-size 3rem
       position absolute
-      right 40px
+      right 2vw
+      top 5vh
   
   .position
+    margin-right 20px
     position absolute
-    left -500px
+    top 60vh
+    left 20vw
 
 #chart
   #content
     #data
-      width 500px
+      width 20%
       position absolute
-      top 150px
-      right 150px
-      font-size 40px
+      top 20vh
+      right 8vw
+      font-size 20px
       color #F2F0C9
 #chart
     #line-chart
       position absolute
-      right 150px
-      top 400px
-      width 500px !important
-      height 387px !important
+      right 0
+      top 40vh
+      width 30% !important
+      height 50% !important
 
 #settings
   #SettingContainer
-    width 500px
+    width 28%
     position absolute
-    top 300px
-    right 100px
+    top 20vh
+    right 2vw
     color #F2F0C9
     text-align left
 
@@ -277,7 +312,7 @@
     right 2%
     top 200px
     text-align center
-    width 600px
+    width 30%
   #newinput
     display inline-blockblock
     width 100%

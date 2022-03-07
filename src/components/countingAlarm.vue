@@ -1,6 +1,6 @@
 <template lang="pug">
 #countingAlarm
-  #alarm-container.d-flex.flex-column.justify-content-between.align-items-center.py-5
+  #alarm-container.d-flex.flex-column.justify-content-center.align-items-center
     //- 顯示目前正在進行的事情
     #title.mt-5 {{currentText}}
     //- 顯示時間
@@ -18,8 +18,8 @@
       //- 跳過
       .skip-btn.mr-3(v-if='current.length > 0' @click='finish(true)')
 
-  #nextText
-    |Next:{{nextText}}
+  //- #nextText
+  //-   |Next:{{nextText}}
 
 </template>
 
